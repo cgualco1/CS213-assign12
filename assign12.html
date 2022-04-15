@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assign12.css">
+    <script src="assign12.js"></script>
+    <title>Milage Calculator</title>
+</head>
+<body>
+  <h1>Millage Calculator</h1>
+  <hr>
+  <div id="output">
+    <div id="container"></div>
+    <div id="travel"></div>
+  </div>
+  <form id="main">
+    <div id="start" class="input">
+      <label class="label" for="startCity"><b>Starting City</b></label>
+      <input type="text" id="startCity" name="startCity" oninput="removeWarning()">
+      <div id="warning3"></div>
+      <label class="label" for="startState"><b>Starting State</b></label>
+      <input type="text" class="state" id="startState" name="startState" oninput="validateStartState()">
+      <div id="warning1"></div>
+    </div>
+    <div id="end" class="input">
+      <label class="label" for="endCity"><b>Ending City</b></label>
+      <input type="text" id="endCity" name="endCity" oninput="removeWarning()">
+      <div id="warning4"></div>
+      <label class="label" for="endState"><b>Ending State</b></label>
+      <input type="text" class="state" id="endState" name="endState" oninput="validateEndState()">
+      <div id="warning2"></div>
+    </div>
+  </form>
+  <button id="databtn" type="button" onclick="validate()">Calculate Milage</button>
+</body>
+</html>
